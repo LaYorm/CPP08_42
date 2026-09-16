@@ -15,7 +15,7 @@ SRC_DIR = src/
 
 SRC_FILES = main.cpp Span.cpp
 
-OBJS = $(addprefix $(SRC_DIR), $(SRC_FILES:.cpp = .o))
+OBJS = $(addprefix $(OBJ_DIR), $(SRC_FILES:.cpp=.o))
 
 all : $(NAME)
 
